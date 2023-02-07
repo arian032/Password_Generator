@@ -13,7 +13,7 @@ settings = {
     'length': 8
 }
 
-PASSWORD_MIN_LENGTH = 4   #agar ba harf bozorg bashe yani ghasd taghir nadarim
+PASSWORD_MIN_LENGTH = 4 
 PASSWORD_MAX_LENGTH = 30
 
 
@@ -25,7 +25,7 @@ def change_length_of_pass(option, default, pass_mi_length=PASSWORD_MIN_LENGTH, p
         if user_input == '':
             return default
 
-        if user_input.isdigit():   #vaghty harf vared mikonim shart aval ke False mishe badi ro nmire
+        if user_input.isdigit():
             password_int = int(user_input)
             if pass_mi_length <= password_int <= pass_max_length:
                 return int(user_input)
